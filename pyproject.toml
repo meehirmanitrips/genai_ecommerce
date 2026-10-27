@@ -1,0 +1,26 @@
+[project]
+name = "genai-ecommerce"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Meehir Tripathy", email = "meehirmanitrips@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=2.33.0",
+    "groq>=1.7.0",
+    "ipykernel>=7.4.0",
+    "openai>=3.37.0",
+    "pydantic>=2.14.1",
+    "pydantic-settings>=2.16.1",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.1",
+]
+
+[project.scripts]
+genai-ecommerce = "genai_ecommerce:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
