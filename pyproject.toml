@@ -18,9 +18,11 @@ dependencies = [
     "streamlit>=1.66.1",
 ]
 
-[project.scripts]
-genai-ecommerce = "genai_ecommerce:main"
+[tool.uv]
+package = false
 
-[build-system]
-requires = ["uv_build>=0.13.5,<0.14.0"]
-build-backend = "uv_build"
+[tool.uv.workspace]
+members = [
+    "apps/api",
+    "apps/chatbot_ui",
+]
